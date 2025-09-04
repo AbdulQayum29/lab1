@@ -82,6 +82,7 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_78260A90152F48689CB5BBE3F0974536 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D544C95F733D4B9C8DD0CC722BE06FA0 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F0A3E0319B90483084C5D47AB76C91EB }}
+          enable-AzPSSession: true
            
     # Deploy Azure WebApp using Bicep file
     - name: deploy
